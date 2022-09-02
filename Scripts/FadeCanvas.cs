@@ -3,6 +3,7 @@ using UnityEngine;
 
 /// <summary>
 /// Fades a canvas over time using a coroutine and a canvas group
+/// This script is built on code from the respective Unity Learn tutorial
 /// </summary>
 [RequireComponent(typeof(CanvasGroup))]
 public class FadeCanvas : MonoBehaviour

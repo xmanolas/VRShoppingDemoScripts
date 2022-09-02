@@ -4,6 +4,7 @@ using TMPro;
 
 public class AddObjectToCart : MonoBehaviour
 {
+
     public GameObject hitGameObject;
     public GameObject destGameObject;
     public GameObject myPrefab;
@@ -16,7 +17,7 @@ public class AddObjectToCart : MonoBehaviour
 
     void Awake()
     {
-        // Update cart TextMeshPro
+        // Initialise shopping cart label text with current number of items
         itemText = itemNo.GetComponent<TextMeshProUGUI>();
         itemText.SetText(productAmount.GetComponent<ProductAmount>().productAmount.ToString());
     }
@@ -24,9 +25,10 @@ public class AddObjectToCart : MonoBehaviour
     void Update()
     {
 
+        // Check for user input
         if (Input.GetMouseButtonDown(0))
         {
-            // Update cart TextMeshPro
+            // Initialise shopping cart label text with current number of items
             itemText.SetText(productAmount.GetComponent<ProductAmount>().productAmount.ToString());
 
             // Detect mouse click
@@ -56,7 +58,7 @@ public class AddObjectToCart : MonoBehaviour
 
     IEnumerator BasketCanvasManager()
     {
-        // Manage cart menu display
+        // Display cart label for set amount of time
         basketCanvas.SetActive(true);
         yield return new WaitForSeconds(4.0f);
         basketCanvas.SetActive(false);
@@ -80,6 +82,7 @@ public class AddObjectToCart : MonoBehaviour
             }
         }
     }
+
 }
     
 
