@@ -8,4 +8,4 @@ AddObjectToCart.cs
 
 MenuTrigger.cs
 
-GameObjectTrigger.cs
+GameObjectSceneTrigger.cs
