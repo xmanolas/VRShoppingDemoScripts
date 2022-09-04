@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 using UnityEngine.Events;
 
-public class GameObjectTrigger : MonoBehaviour
+public class GameObjectSceneTrigger : MonoBehaviour
 {
     public string sceneName;
     public Transform curGameObjectTransform;
@@ -13,7 +13,6 @@ public class GameObjectTrigger : MonoBehaviour
     public float audioTransitionTime;
     public UnityEvent ButtonClick = new UnityEvent();
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
