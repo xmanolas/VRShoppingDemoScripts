@@ -9,3 +9,5 @@ AddObjectToCart.cs
 MenuTrigger.cs
 
 GameObjectSceneTrigger.cs
+
+PersistenceDataManager.cs
